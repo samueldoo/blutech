@@ -36,6 +36,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 # The code app\layout.js is a React component that serves as the root layout for a Next.js application. It defines the overall structure and layout of the application, which will be shared across all pages.
 
 # the code in app\page.js sets up a React component that renders a page with a heading and a list of departments. The list of departments is initially empty but can be updated by passing search results to the handleSearchResults function, which updates the departments state. The updated state is then passed to the DepartmentList component, which renders the list of departments on the page.
+## This is also responsive on all screen devices
 
 ## Learn More
 
