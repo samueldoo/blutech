@@ -25,7 +25,7 @@ export function ProductProvider({ children }) {
   const [filteredProducts, setFilteredProducts] = useState(initialDepartments);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
+  
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -43,7 +43,7 @@ export function ProductProvider({ children }) {
         return acc;
       }, {})
     });
-
+    
     try {
       setLoading(true);
       const response = await axios.get(`${API_BASE_URL}/products/public/catalog?${queryParams}`);

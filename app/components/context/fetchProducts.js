@@ -14,7 +14,7 @@ export async function fetchProducts(params = {}) {
       return acc;
     }, {})
   });
-
+  console.log(API_BASE_URL);
   try {
     const response = await axios.get(`${API_BASE_URL}/products/public/catalog?${queryParams}`);
     return response.data;
