@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://3.88.1.181:8000';
-
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 export async function fetchProducts(params = {}) {
   const queryParams = new URLSearchParams({
     supplier: params.supplier || '',

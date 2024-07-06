@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const ProductContext = createContext();
 
-const API_BASE_URL = 'http://3.88.1.181:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 const initialDepartments = [
   { id: 1, img: "/Beauty.png", sku: "MG234567", name: "Gloss", title: "Beauty and glamour", description: "Lorem ipsum dolor sit amet consectetur.", brand: 18.0, costPrice: 38.0, quantity: 36, size: 1800, },
